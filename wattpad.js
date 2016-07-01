@@ -18,11 +18,11 @@
             data = window.prefetched[i].data;
             part = i;
             // Display word count
-            var stats = document.getElementsByClassName("story-stats");
+            var stats = document.getElementsByClassName("story-stats")[0];
             var words = document.createElement("span");
             var inner = document.createElement("span");
             var text = document.createElement("p");
-            text.innerText = data.wordCount;
+            text.innerText = data.wordCount + " words";
             inner.className = "fa fa-view fa-wp-grey";
             words.appendChild(inner);
             words.appendChild(text);
